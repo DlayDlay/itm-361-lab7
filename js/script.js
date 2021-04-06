@@ -1,9 +1,17 @@
 function init(){
-//add your javascrip between these two lines of code
+//add your javascript between these two lines of code
+
+  function myFunction(){
+	var tb = document.getElementById("entryinput");
+    alert("Dylan Baltrus: " + tb.value);
+    
+  }
  
+  var b1 = document.getElementById("entrybutton");
+  
+  b1.addEventListener('click', myFunction);
 
-
-
+}
 
 
 
