@@ -2,9 +2,10 @@ function init(){
 //add your javascript between these two lines of code
 
   function myFunction(){
-	var tb = document.getElementById("entryinput");
-    alert("Dylan Baltrus: " + tb.value);
-    
+	var tbox = document.getElementById("entryinput");
+	var output = document.getElementById("textoutput");
+    alert("Dylan Baltrus: " + tbox.value);
+    output.innerHTML = tbox.value;
   }
  
   var b1 = document.getElementById("entrybutton");
@@ -12,8 +13,5 @@ function init(){
   b1.addEventListener('click', myFunction);
 
 }
-
-
-
 
 window.addEventListener('load', init);
